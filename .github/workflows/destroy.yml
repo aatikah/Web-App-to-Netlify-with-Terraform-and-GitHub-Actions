@@ -1,0 +1,22 @@
+name: Destroy Netlify Deployment
+on:
+  workflow_dispatch:  # Manual trigger
+  # Optionally, trigger on a specific branch:
+  # push:
+  #   branches:
+  #     - destroy
+jobs:
+  destroy:
+    runs-on: ubuntu-latest
+    env:
+      TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+      - name: Terraform Init
+        run: |
+          for i in {1..3}; do terraform init -reconfigure && break || sleep 5; done
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve
