@@ -5,7 +5,7 @@ resource "random_string" "suffix" {
 }
 
 resource "netlify_site" "app_site" {
-  name = "resume-${random_string.suffix.result}"  # Customize the base name.
+  name = "resume-${random_string.suffix.result}"  # Customize the base name
 }
 
 output "site_url" {
