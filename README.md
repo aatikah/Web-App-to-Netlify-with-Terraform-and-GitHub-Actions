@@ -125,7 +125,7 @@ This block defines a Terraform variable named netlify_token, which holds your Ne
   
    ---
 
-   ## Step 5: GitHub Actions Workflows
+## Step 5: GitHub Actions Workflows
 
 Now we'll create our CI/CD pipelines for deployment and cleanup.
 
@@ -154,7 +154,7 @@ Back in your HashiCorp Cloud Platform workspace:
     - Category: Environment variable
     - Sensitive: ✅ (check this box)
 
-      ---
+---
 
 ## Step 7: Deploy Your Application
 
@@ -195,10 +195,9 @@ When you need to clean up:
   - Confirm resource deletion in your Netlify dashboard
 
  ---
-    ## Best Practices and Tips
+## Best Practices and Tips
 
 ### Security Considerations:
-
   - Never commit sensitive tokens to your repository
   - Use GitHub secrets for all authentication tokens
   - Regularly rotate your access tokens
