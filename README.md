@@ -4,7 +4,7 @@
 This guide explains how to deploy your web application to Netlify whenever you push code to your main branch, with the ability to tear down resources when needed.
 
 ---
-![Slack Preview](https://github.com/aatikah/Web-App-to-Netlify-with-Terraform-and-GitHub-Actions/blob/main/netlify.png)
+![Preview](https://github.com/aatikah/Web-App-to-Netlify-with-Terraform-and-GitHub-Actions/blob/main/netlify.png)
 
 ## 📖 Detailed Walkthrough
 For a comprehensive step-by-step guide, including screenshots and detailed explanations, check out the full tutorial on Medium:
